@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Let's Mow Racing Academy</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/logo.jpg">
+
+
+    <!--Callendar Script -->
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script>
+        $(function() {
+            $( "#date" ).datepicker();
+        });
+    </script>
+
+    <!--Polyfill-->
+    <script src="scripts/jquery-1.8.2.min.js"></script>
+    <script src="scripts/modernizr-custom.js"></script>
+    <script src="scripts/webshim/polyfiller.js"></script>
+    <script>
+        $.webshims.polyfill('mediaelement');
+    </script>
+
+</head>
+
+<body>
+
+<nav class="fixed-nav-bar">
+    <div id="menu" class="menu">
+        <a class="sitename" href="index.html"><img src="images/logo.jpg" id="logo" alt="logo"></a>
+        <!-- Example responsive navigation menu -->
+        <a class="show" href="#menu"><img src="images/menu-btn.jpg" alt="menu btn-show"></a><a class="hide" href="#hidemenu"><img src="images/menu-btn-hide.jpg" alt="menu btn-hide"> </a>
+        <ul class="menu-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mower.html">Mower's</a></li>
+            <li><a href="races.html">Races</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="driving.html">Tips</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="content2">
+    <div class="description">
+
+        <h1>Sign Up Today</h1>
+
+        <form action="http://www.example@gmail.com" method="get">
+            <fieldset>
+                <h2>Personal Info</h2>
+                <p class=" col span_1_of_3">
+                    <input type="text" name="name" required="required" id="fname" placeholder="Enter Name" />
+                </p>
+
+                <p class="col span_1_of_3">
+                    <input type="email" name="email" size="30" maxlength="20" required="required" placeholder="example@gmail.com" id="email" />
+                </p>
+
+                <p class="col span_1_of_3">
+                    <input type="tel" name="phone" id="phone" placeholder="Tell"/>
+                </p>
+
+                <p class="clear"></p>
+
+                <p class="col span_1_of_3">
+
+                    <label>
+                        Gender:</label>
+                    <input type="radio" name="gender"  id="male" />
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender"  id="female"/>
+                    <label for="female">Female</label>
+                </p>
+
+                <p class="col span_1_of_3">
+                    <input type="date" name="date" id="date" placeholder="DOB MM/DD/YY" />
+                </p>
+
+                <p class="col span_1_of_3">
+                    <input id="address" type="text" name="address" required="required" placeholder="Enter your address" />
+                </p>
+
+                <p class="clear"></p>
+
+                <p class=" col span_1_of_3">
+                    <input type="text" name="city" required="required" id="city" placeholder="City" />
+                </p>
+
+
+                <p class=" col span_1_of_3">
+                    <input type="text" name="state" required="required" id="State" list="statelist" placeholder="select state"/>
+                    <datalist id="statelist">
+                        <select>
+                            <option value="Arizona">Arizona</option>
+                            <option value="Florida">Florida</option>
+                            <option value="New Jersey">New Jersey</option>
+                            <option value="New York">New York</option>
+                            <option value="Texas">Texas</option>
+                            <option value="Washington">Washington</option>
+                        </select>
+                    </datalist>
+                </p>
+
+                <p class=" col span_1_of_3">
+                    <input type="text" name="name" required="required" id="zip" placeholder="Enter Zip"/>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <h2>Additional Information</h2>
+
+
+                <p class="clear"></p>
+
+                <p class=" col span_1_of_3">
+                    <select name="employment">
+                        <option value="Please Select one">Who are you?</option>
+                        <option value="Fan">Fan</option>
+                        <option value="Driver">Driver</option>
+                        <option value="Sponsor">Sponsor</option>
+                    </select>
+                </p>
+
+                <p class="col span_2_of_3">
+                    <textarea name="message" rows="3" placeholder="Enter your message here"></textarea>
+
+                </p>
+
+                <p class="clear"></p>
+
+                <p class=" col span_1_of_3">
+                    <label for="myRange">Do You Love Racing?</label>
+                    <input type="range" id="myRange" value="90">
+                </p>
+
+                <p class="clear"></p>
+
+                <p class=" col span_1_of_3">
+                    <label for="terms" >I accept the Terms & Conditions</label>
+                    <input type="checkbox" name="terms" value="terms" id="terms" required="required"/>
+                </p>
+
+                <p class="clear"></p>
+
+                <p class="col span_1_of_3">
+                    <input class="button" type="submit" value="Create account">
+                </p>
+
+            </fieldset>
+        </form>
+    </div>
+</section>
+
+<section class="some-related-articles">
+
+    <h2>Sign up Perks</h2>
+
+    <table class="table table-condensed ">
+        <thead>
+        <tr>
+            <!--<th></th>-->
+            <th>Event Updates</th>
+            <th>Drivers Tips</th>
+            <th>Season Calendar</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="active">
+            <td class="check">&#x2713;</td>
+            <td class="check">&#x2713;</td>
+            <td class="check">&#x2713;</td>
+        </tr>
+        </tbody>
+    </table>
+
+</section>
+<footer>
+    &copy;hilson.francis&reg;2014
+</footer>
+
+<script src="scripts/jquery-1.8.2.min.js"></script>
+<script src="scripts/modernizr-custom.js"></script>
+<script src="scripts/webshim/polyfiller.js"></script>
+<script>
+    $.webshims.polyfill('mediaelement');
+</script>
+</body>
+</html>

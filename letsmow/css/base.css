@@ -1,0 +1,196 @@
+@import url(http://fonts.googleapis.com/css?family=Signika:600|Varela+Round);
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* BASIC */
+body {
+    font-family: 'Play', sans-serif;
+    background-image:url("../images/polaroid.png") ;
+    color: #2e2e2e;
+}
+h1, h2 {
+    font-family: 'Play', sans-serif;
+    font-weight: 600;
+}
+h1 {
+    font-size: 36px;
+    line-height: 46px;
+    color: #fdfdfd;
+}
+h2 {
+    font-size: 30px;
+    line-height: 33px;
+    margin: 55px 0px 20px;
+    color:#DB1E1E;
+    text-shadow: 1px 1px #656565;
+}
+
+h3{
+    font: "Signika", sans-serif bold;
+    font-size: 24px;
+    color: #4f1515;
+
+}
+
+p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+label{
+    color: #fdfdfd;
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+                    /*added*/
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* LAYOUT */
+.fixed-nav-bar {
+    box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.6);
+}
+.content {
+    position: relative;
+    background: #464646 url(../images/banner.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.content2 {
+    position: relative;
+    background: #464646 url(../images/banner2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.content3 {
+    position: relative;
+    background: #464646 url(../images/banner3.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.description, .some-related-articles {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.description {
+    padding-top: 145px;
+    padding-bottom: 110px;
+    min-height: 250px;
+    text-align: center;
+}
+.some-related-articles {
+    color: #232323;
+}
+.some-related-articles h1 {
+    color:#DB1E1E;
+    text-shadow: 2px 2px #656565;
+    margin-top: 60px;
+    text-transform: uppercase;
+}
+
+.some-related-articles h2, h2{
+
+}
+
+
+footer {
+    clear: left;
+    padding:.8%;
+    margin: 3em 0 0;
+    color: #2e2e2e;
+    border: 1px solid #8fa3ae;
+    box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.6);
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    border-radius: 3px;
+    text-align: center;
+    /*z-index: 99999;*/
+}
+
+.clear{
+    clear: left;
+    margin: 0;
+}
+
+/* SPECIAL */
+.summary {
+    color: #fdfdfd;
+    margin-top: 40px;
+    /*margin-bottom: 60px;*/
+    font: bold;
+}
+.button, .button:visited, .button-dark {
+    display: inline-block;
+    min-width: 12%;
+    margin: 50px 10px 30px 10px;
+    padding: 10px;
+    font-family: "Signika", sans-serif;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    text-transform: capitalize;
+    text-align: center;
+    transition: all 0.1s ease;
+}
+.button-dark, .button-dark:visited {
+    margin: 20px 10px 30px 0;
+    color: #464646;
+    border-color: #464646;
+}
+.button:hover, .button-dark:hover {
+    transition: all 0.3s ease;
+}
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.button-dark:hover {
+    color: #ffffff;
+    background-color: rgba(70, 70, 70, 0.9);
+}
+
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float:left;
+    /*margin: 1% 0 1% 1.6%;*/
+    margin: 1% 2% 1% 1%;
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+    width: 100%;
+}
+.span_2_of_3 {
+    width: 54.13%;
+    margin: 1% 1% 1% 4%;
+}
+.span_1_of_3, .social {
+    width: 30.26%;
+}
+.span_4_of_3 {
+    width: 5%;
+}
+.span_5_of_3 {
+    width: 86%;
+}
+
+/*  GRID OF TWO  */
+.span_1_of_2 {
+    display: block;
+    float: left;
+    width: 45.2%;
+}
+
